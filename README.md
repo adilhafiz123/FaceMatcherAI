@@ -5,7 +5,7 @@
 
 # FaceMatcher 😎🔍
 
-**Detect, visualize 🖼️, and compare 🆚 faces in a flash using the Google Cloud Vision API.**
+**Detect, visualize 🖼️, and compare 🆚 faces in a flash!**
 
 ---
 

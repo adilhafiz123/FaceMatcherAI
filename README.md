@@ -1,15 +1,26 @@
-# FaceMatcher
+<p align="center">
+  <!-- Replace with the path/URL of your banner or logo image -->
+  <img src="https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/202203/face-600x900.png" alt="FaceMatcher banner" width="300">
+</p>
 
-A Python utility for detecting faces in images and comparing whether faces match using the Google Cloud Vision API.
+# FaceMatcher 😎🔍
 
-## Features
+**Detect, visualize 🖼️, and compare 🆚 faces in a flash using the Google Cloud Vision API.**
 
-- Detect faces in images
-- Visualize detected faces with bounding boxes
-- Compare faces between two images
-- Simple command-line interface
+---
 
-## Installation
+## ✨ Features
+
+| Emoji | Capability |
+| :---: | --- |
+| 🔍 | **Face detection** in a single image |
+| 🖼️ | **Bounding-box visualization** (optional `--show`) |
+| 🔄 | **Face comparison** between two images |
+| ⚙️ | **Simple CLI** with sensible defaults (`detect` / `compare`) |
+
+---
+
+## 📦 Installation
 
 1. Clone this repository:
    ```bash
@@ -22,15 +33,16 @@ A Python utility for detecting faces in images and comparing whether faces match
    pip install -e .
    ```
 
-## Prerequisites
+## 🛠️ Prerequisites
+🐍 Python 3.8+
 
-- Python 3.8 or higher
-- Google Cloud project with Vision API enabled
-- Service account JSON key file
+☁️ Google Cloud project with Vision API enabled
+
+🔑 Service-account JSON key
 
 ## Usage
 
-### Detect Faces
+### 🔍 Detect Faces
 
 To detect faces in an image:
 
@@ -40,7 +52,7 @@ facematcher detect --image photo.jpg --show
 
 The `--show` flag is optional and will display the image with bounding boxes around detected faces.
 
-### Compare Faces
+### 🔄 Compare Faces
 
 To compare faces between two images:
 
@@ -54,7 +66,7 @@ You can adjust the matching threshold (lower is stricter) with the `--threshold`
 facematcher compare --image-a alice.jpg --image-b bob.jpg --threshold 50.0
 ```
 
-### Google Cloud Credentials
+### 🔑 Credentials
 
 Either set the `GOOGLE_APPLICATION_CREDENTIALS` environment variable:
 
@@ -68,7 +80,7 @@ Or specify the credentials file path with the `--credentials` option:
 facematcher detect --image photo.jpg --credentials /path/to/your/credentials.json
 ```
 
-## Development
+## 🧑‍💻 Development
 
 1. Create a virtual environment:
    ```bash
@@ -81,6 +93,6 @@ facematcher detect --image photo.jpg --credentials /path/to/your/credentials.jso
    pip install -e ".[dev]"
    ```
 
-## License
+## 📄 License
 
 MIT License - see LICENSE file for details 

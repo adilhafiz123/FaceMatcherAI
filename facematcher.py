@@ -1,7 +1,7 @@
 
 """facematcher.py
 
-Simple utility for detecting faces in images and comparing whether the first
+Library for detecting faces in images and comparing whether the first
 face in *image A* appears to match the first face in *image B* using the
 Google Cloud Vision API.
 
